@@ -29,7 +29,8 @@ function main() {
     curl "${url}" \
       --silent \
       --location \
-      --retry-all-errors \
+      --retry 12 \
+      -retry-all-errors \
       --retry-delay 2 \
       --output "/tmp/go.tgz"
 
