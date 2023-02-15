@@ -3,6 +3,7 @@
 set -e
 set -u
 set -o pipefail
+set -x
 
 function main() {
   if [[ "${CF_STACK:-}" != "cflinuxfs3" && "${CF_STACK:-}" != "cflinuxfs4" ]]; then
