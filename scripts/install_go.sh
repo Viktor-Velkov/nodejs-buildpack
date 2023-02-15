@@ -27,7 +27,6 @@ function main() {
 
     echo "-----> Download go ${version}"
     curl "${url}" \
-      --silent \
       --location \
       --retry 12 \
       -retry-all-errors \
